@@ -4,8 +4,7 @@ import { Card, CardImg,  CardText, CardTitle, ListGroup, ListGroupItem, Media } 
 class DishDetail extends Component {
     constructor(props){
         super(props);
-        this.state = {
-        };
+ 
     }
 
     renderComments(comments){
@@ -20,8 +19,7 @@ class DishDetail extends Component {
                 return (
                     <Media list className ="list-unstyled">
                         <div key={commentItem.id} >
-                            <p>{commentItem.comment}</p>
-                            
+                            <p>{commentItem.comment}</p>                            
                             <p>--{commentItem.author}, {formattedDate}</p>
                             <br />
                         </div>
@@ -38,11 +36,10 @@ class DishDetail extends Component {
 
             );
         }
-
     }
     
     render(){
-        const detail = this.props.chosenDish;
+        const detail = this.props.dish;
         if (detail == null){
             return (
                 <div></div>
