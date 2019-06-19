@@ -112,7 +112,6 @@ class Header extends Component {
                         </FormGroup>
                         <Button type="submit" value="submit" color="primary">Login</Button>
                     </Form>
-
                 </ModalBody>
             </Modal>
         </React.Fragment>
