@@ -3,6 +3,7 @@ import { Button, Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, Bread
     Modal, ModalHeader, ModalBody, Label, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
+import { Loading } from './LoadingComponent';
 
 const required = (val)=> val&&val.length;
 const maxLength = (len) => (val) => !(val) || val.length <= len;
@@ -10,7 +11,7 @@ const minLength = (len) => (val) => val && (val.length >= len);
 
 
 function RenderComments({comments, addComment, dishId}){
-    if (comments != null){
+     if (comments != null){
         return (
             <div className="col-12 col-md-5 m-1">
                 <h4>Comments</h4>
@@ -23,13 +24,11 @@ function RenderComments({comments, addComment, dishId}){
                             <p>{comment.comment}</p>
                             <p>-- {comment.author}, {formattedDate}</p>
                         </li>
-
                     );
                 })}
                 </ul>
                 <CommentForm dishId={dishId} addComment={addComment}/>
-            </div>
-            
+            </div>           
 
         );
     }else{
@@ -72,6 +71,7 @@ export class CommentForm extends Component {
         this.toggleModal();
         this.props.addComment(this.props.dishId, 
             values.rating, values.author, values.comment);
+        console.log(this.props);
 
     }
 
@@ -136,7 +136,23 @@ export class CommentForm extends Component {
 } 
     
 const DishDetail = (props) => {
-    if (props.dish == null){
+    if (props.isLoading){
+        return(
+            <div className="container">
+                <div className="row">
+                    <Loading />
+                </div>
+            </div>
+        );
+    }else if(props.errMess){
+        return(
+            <div className="container">
+                <div className="row">
+                    <h4>{props.errMess}</h4>
+                </div>
+            </div>
+        );
+    }else if (props.dish == null){
         return (
             <div></div>
         );
