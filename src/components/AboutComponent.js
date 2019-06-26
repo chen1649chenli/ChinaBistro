@@ -9,7 +9,7 @@ function RenderLeader({leader}){
         <div key={leader.id}>
             <Media tag="li" >
                 <Media left middle>
-                    <Media object src={baseUrl + leader.image} alt={leader.name} />                            
+                    <Media object src={baseUrl + leader.image} alt={leader.name} className='my_image' />                            
                 </Media>
                 <Media body className="ml-5">
                     <Media heading>{leader.name}</Media>
@@ -45,7 +45,7 @@ function About(props) {
             <div className="row row-content">
                 <div className="col-12 col-md-6">
                     <h2>Our History</h2>
-                    <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+                    <p>Started in 2010, China Bristro quickly established itself as a culinary icon par excellence in Atlanta, Georgia. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Atlanta.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
                     <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
                 </div>
                 <div className="col-12 col-md-5">
