@@ -6,12 +6,13 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
 
+
 const required = (val)=> val&&val.length;
 const maxLength = (len) => (val) => !(val) || val.length <= len;
 const minLength = (len) => (val) => val && (val.length >= len);
 
 
-function RenderComments({comments, addComment, dishId}){
+function RenderComments({comments, postComment, dishId}){
      if (comments != null){
         return (
             <div className="col-12 col-md-5 m-1">
@@ -28,7 +29,7 @@ function RenderComments({comments, addComment, dishId}){
                     );
                 })}
                 </ul>
-                <CommentForm dishId={dishId} addComment={addComment}/>
+                <CommentForm dishId={dishId} postComment={postComment}/>
             </div>           
 
         );
@@ -70,10 +71,8 @@ export class CommentForm extends Component {
 
     handleSubmit(values){
         this.toggleModal();
-        this.props.addComment(this.props.dishId, 
-            values.rating, values.author, values.comment);
-        console.log(this.props);
-
+        this.props.postComment(this.props.dishId,
+            values.rating, values.username, values.comment);  
     }
 
     render(){
@@ -173,7 +172,7 @@ const DishDetail = (props) => {
                 <div className="row">
                     <RenderDish dish={props.dish} />
                     <RenderComments comments={props.comments} 
-                    addComment={props.addComment}
+                    postComment={props.postComment}
                     dishId={props.dish.id} />
                 </div>
             </div>
