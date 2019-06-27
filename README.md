@@ -10,8 +10,8 @@
 
 <br />
 <p align="center">
-  <h1 align="center">China Bristro</h1>
-  <p align="center">
+  <h1 align="left">China Bristro</h1>
+  <p align="left">
     An awesome React-Redux powered single-page web application. 
     <br />
     <a href="https://youtu.be/B0p8dqbcCp8">View Demo</a>
