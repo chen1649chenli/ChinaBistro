@@ -1,68 +1,106 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+![Build Status][build-shield]
+![react version](https://img.shields.io/badge/react-v16.8.6-blue.svg?style=flat-square)
+![redux version](https://img.shields.io/badge/redux-v4.0.1-purple.svg?style=flat-square)
+![npm version](https://img.shields.io/badge/npm-v6.9.0-red.svg?style=flat-square)
+[![MIT License][license-shield]](license-url)
+[![LinkedIn][linkedin-shield]](linkedin-url)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<br />
+<p align="center">
+  <h1 align="center">China Bristro</h1>
+  <p align="center">
+    An awesome React-Redux powered single-page web application. 
+    <br />
+    <a href="https://youtu.be/B0p8dqbcCp8">View Demo</a>
+  </p>
+</p>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [License](#license)
+* [Link](#link)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm run eject`
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Welcome to China Bristro. This is a React-Redux powered single-page web applcaiton. I leveraged Reactstrap for Bootstrap 4-based responsive UI design, and various aspects of React components for page layout. I used React router for page navigation, and the Flux architecture and Redux for state management. Fetch library and RESTs API were implemented for client-server communication.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built With
+* [React](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [ReactStrap](https://reactstrap.github.io/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+<!-- GETTING STARTED -->
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Install the React and Redux**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   yarn global add create-react-app
+   ```
+   ```sh
+   yarn add redux
+   ```
 
-### Code Splitting
+2. **Install dependencies**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+   ```sh
+   yarn install
+   ```
 
-### Analyzing the Bundle Size
+3. **Start the development server**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+   ```sh
+   yarn start
+   ```
 
-### Making a Progressive Web App
+## Building and Running for Production
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+In addition to the development server started with `yarn start`, you can also generate a full static production build and deploy that to an json-server to preview the site as it will appear once deployed:
 
-### Advanced Configuration
+```sh
+yarn build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+<!-- LICENSE -->
+## License
 
-### Deployment
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<!-- CONTACT -->
+## Link
+
+Project Repo - [Github](https://github.com/chen1649chenli/china_bristro)
+
+Website: [Link](http://www.chinabristro.com:4000)
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: https://choosealicense.com/licenses/mit
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/lichen1649/
+[product-screenshot]: https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/screenshot.png
