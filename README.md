@@ -10,7 +10,7 @@
 
 <br />
 <p align="center">
-  <h1 align="left">China Bristro</h1>
+  <h1 align="left">China Bistro</h1>
   <p align="left">
     An awesome React-Redux powered single-page web application. 
     <br />
@@ -90,7 +90,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Link
 
-Project Repo - [Github](https://github.com/chen1649chenli/china_bistro)
+Project Repo - [Github](https://github.com/chen1649chenli/ChinaBistro)
 
 Website: [Link](http://www.chinabristro.com:4000)
 
