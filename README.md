@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot](./ChinaBristro.png)
+![Product Name Screen Shot](./ChinaBistro.png)
 
 Welcome to China Bristro. This is a React-Redux powered single-page web applcaiton. I leveraged Reactstrap for Bootstrap 4-based responsive UI design, and various aspects of React components for page layout. I used React router for page navigation, and the Flux architecture and Redux for state management. Fetch library and RESTs API were implemented for client-server communication.
 
