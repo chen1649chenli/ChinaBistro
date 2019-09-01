@@ -4,7 +4,7 @@
 ![redux version](https://img.shields.io/badge/redux-v4.0.1-purple.svg?style=flat-square)
 ![npm version](https://img.shields.io/badge/npm-v6.9.0-red.svg?style=flat-square)
 [![MIT License][license-shield]](license-url)
-[![LinkedIn][linkedin-shield]](linkedin-url)
+
 
 
 
